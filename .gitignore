@@ -1,0 +1,16 @@
+.vercel/
+.env*
+node_modules/
+.DS_Store
+qa/
+
+# Earlier local prototypes and one-time import material
+site/newspaper/
+site/app.js
+site/styles.css
+site/assets/anna-headshot.jpg
+site/assets/le-index.webp
+scripts/build.py
+scripts/prepare-assets.py
+source/dashboard-new.json
+.vercel

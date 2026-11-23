@@ -1,0 +1,12 @@
+qa/
+.git/
+node_modules/
+.env*
+site/newspaper/
+site/app.js
+site/styles.css
+site/assets/anna-headshot.jpg
+site/assets/le-index.webp
+scripts/build.py
+scripts/prepare-assets.py
+source/dashboard-new.json

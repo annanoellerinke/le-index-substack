@@ -1,0 +1,14 @@
+{
+  "name": "le-index-substack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An illustrated apartment building full of Le Index stories.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-building.mjs",
+    "preview": "python3 -m http.server 4173 --directory site"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
