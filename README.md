@@ -52,7 +52,9 @@ Give feedback in plain language:
 - “Show my articles as magazine covers.”
 - “Use these cover images with the titles already on them.”
 - “Keep the original illustration style.”
-- “Put my newest articles first.”
+- “Put my newest articles first, reading left to right and then down.”
+- “Put an article in every window, with no skipped article windows.”
+- “Use five columns on desktop and three on mobile.”
 - “Let people filter by my categories.”
 - “Make the images larger on mobile.”
 - “Show me what it looks like before you publish.”
@@ -91,7 +93,7 @@ Start with a few easy questions, then ask only the follow-ups needed. Confirm:
 
 1. **Their publication:** exact Substack homepage URL, publication name, author name, and the personal links they want included. Verify About and Subscribe destinations from their publication; ask about anything ambiguous.
 2. **Their visual direction:** layout, colors, typography, reference images or websites, logo, and any photos they want to use. If they are unsure, offer two or three concrete directions.
-3. **Their article display:** all published articles or a selection; newest first or another order; category filters; and the exact cover-image version they prefer.
+3. **Their article display:** all published articles or a selection; newest first or another order; category filters; the exact cover-image version they prefer; and separate desktop/mobile column counts. For illustrated layouts, ask whether every article window should be filled or some should remain decorative.
 4. **Their extras:** an introduction, portrait, genuine testimonial, subscription link, animations, or other interactions. Ask for the actual text and attribution where needed.
 5. **Their launch:** where the project should live and whether they already have a site that must be preserved. Choose the Vercel account and project name with them when publication is relevant.
 
@@ -114,6 +116,8 @@ Use a maintainable implementation suited to the design. A static site is a good 
 
 Use the user's branding and approved artwork. For image-based layouts, preserve the intended illustration style and fit article covers into the agreed spaces. Keep layout, crop, image size, and background changes separate enough that feedback can be applied precisely.
 
+For filled-window layouts, assign one unique article to every visible article window, in reading order from left to right and then down. Use the agreed column count separately on desktop and mobile. Handle a short final row by showing only the remaining article windows, without duplicating posts or leaving accidental empty slots. Preserve the illustration’s proportions when cropping rows. Decorative neighboring buildings and entrance artwork are separate from the article collection unless the user asks otherwise.
+
 Build responsive behavior from the beginning. Give article links descriptive accessible names, make controls usable by keyboard, and respect reduced-motion preferences for animation. Confirm how categories should appear so readers can find them without guessing.
 
 Use a normal link to the Substack destination underneath optional navigation animation. If an animation is unavailable or reduced motion is preferred, the link should still work.
@@ -127,6 +131,7 @@ Verify:
 - The publication name, logo, personal links, and subscription destination belong to the user.
 - Article covers load, match their titles, and open the correct posts.
 - The article order is correct and imported records are not duplicated.
+- Every requested article slot is populated, and desktop/mobile column counts match the design, including filtered results and short final rows.
 - Category controls show the right articles and accurate counts.
 - Text is readable, controls are usable, and the phone layout does not overflow horizontally.
 - Any interactive illustration or animation reaches the intended destination and behaves with reduced motion.
